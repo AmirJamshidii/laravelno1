@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-route::get('about', 'pagesController@home');
+route::get('about', [PagesController::class, 'home']);
