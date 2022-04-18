@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\CardsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,14 @@ use App\Http\Controllers\PagesController;
 // });
 
 
-route::get('about', [PagesController::class, 'home']);
+// route::get('/', [PagesController::class, 'home']);
+
+// Route::get('ik', function () {
+//     return view('ik');
+// });
+
+// Route::get('about', function () {
+//     return view('about');
+// });
+
+route::get('cards', [CardsController::class, 'index']);
