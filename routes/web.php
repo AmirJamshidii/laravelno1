@@ -32,4 +32,5 @@ use App\Http\Controllers\CardsController;
 //     return view('about');
 // });
 
-route::get('cards', [CardsController::class, 'index']);
+// route::get('cards', [CardsController::class, 'index']);
+route::get('cards/{card}', [CardsController::class, 'show']);

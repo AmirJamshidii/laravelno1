@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1> about page </h1>
+    <h1> {{ $card->title }} </h1>
 
 @stop
 
