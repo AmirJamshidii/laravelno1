@@ -8,10 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Note extends Model
 {
     use HasFactory;
+    protected $fillable = ['body'];
 
     public function card()
     {
-        return $this->belongsTo(Card::class);
         
+        return $this->belongsTo(Card::class);
     }
 }
